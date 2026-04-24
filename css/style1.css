@@ -114,6 +114,22 @@ nav a:hover {
 }*/
 /*css detalle.htlm*/
 /* RESET BÁSICO */
+
+
+/*CSS BASADO EN EL DE NICOLE*/
+:root {
+  --fuente-grupo: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+  --blanco: #ffffff;
+  --azul-principal: #0a0c83;
+  --azul-secundario: #1987d4;
+  --celeste-fondo: #f4f8f6;
+  --texto-oscuro: #0e0f0f;
+  --sombra: 0px 0px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* ================= BASE ================= */
 * {
   margin: 0;
   padding: 0;
@@ -121,148 +137,123 @@ nav a:hover {
 }
 
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f5f5f5;
-  color: #333;
-
-  /* 👇 GRID PRINCIPAL */
+  font-family: var(--fuente-grupo);
+  background-color: var(--celeste-fondo);
+  color: var(--texto-oscuro);
   display: grid;
-  grid-template-areas:
-    "header"
-    "main"
-    "footer";
   grid-template-rows: auto 1fr auto;
   min-height: 100vh;
+  gap: 20px;
 }
-
-/* ================= HEADER ================= */
+main {
+  padding: 2rem;
+  display: grid;
+  gap: 2rem; /* antes 1.5 */
+}
+/* ================= HEADER COMPARTIDO ================= */
 header {
-  grid-area: header;
-  background-color: #1e293b;
-  color: white;
-  padding: 1rem;
+  background-color: rgb(10, 12, 131);
+  color: var(--blanco);
+  padding: 20px;
 
-  /* FLEX: título + nav */
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+
+  border-bottom: 5px solid #27d4ff;
 }
 
 header h1 {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
 }
 
-/* NAV con FLEX */
 nav {
   display: flex;
-  gap: 1rem;
+  gap: 15px;
 }
 
 nav a {
-  color: white;
+  color: var(--blanco);
   text-decoration: none;
-  padding: 0.5rem 0.8rem;
+  padding: 6px 10px;
   border-radius: 5px;
-  transition: 0.2s;
 }
 
 nav a:hover {
-  background-color: #334155;
-}
-
-/* ================= MAIN ================= */
-main {
-  grid-area: main;
-  padding: 2rem;
-
-  /* GRID para secciones */
-  display: grid;
-  gap: 1.5rem;
-}
-
-/* cada section como “caja” */
-section {
-  background: white;
-  padding: 1.5rem;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-
-  /* FLEX interno (opcional pero útil) */
-  display: flex;
-  flex-direction: column;
-  gap: 0.8rem;
-}
-
-/* listas más limpias */
-ul {
-  padding-left: 1.2rem;
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 /* ================= FOOTER ================= */
 footer {
-  grid-area: footer;
-  background-color: #1e293b;
-  color: white;
+  background-color: rgb(10, 12, 131);
+  color: var(--blanco);
   text-align: center;
-  padding: 1rem;
+  padding: 15px;
 }
 
+/* ================= Detalle.html ================= */
 .detalle-proyecto {
-  background: white;
-  padding: 1.5rem;
+  background-color: var(--blanco);
+  padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
 
   display: flex;
   flex-direction: column;
-  gap: 0.8rem;
+  gap: 10px;
 }
 
 .detalle-proyecto h2 {
-  margin-bottom: 0.5rem;
+  color: rgb(10, 12, 131);
 }
 
 .detalle-proyecto h3 {
-  margin-top: 1rem;
-  font-size: 1.1rem;
-  color: #1e293b;
+  color: var(--azul);
 }
 
 .info-extra {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1.5rem;
-  margin-top: 1.5rem;
 }
+.info-extra h2{
+  color: #1e293b;
 
-/* estilo de cada bloque 
+}
 .recursos,
 .equipo {
-  background: white;
-  padding: 1.5rem;
+  background-color: var(--blanco);
+  padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-}*/
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
 
-a {
-  color: #1e293b;
-  text-decoration: none;
-  transition: 0.2s;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-a:hover {
-  color: #0f172a;
+.recursos ul,
+.equipo ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.recursos li,
+.equipo li {
+  display: flex;
+  gap: 8px;
+}
+
+.recursos a,
+.equipo a {
+  text-decoration: none;
+  color: var(--azul);
+}
+
+.recursos a:hover,
+.equipo a:hover {
   text-decoration: underline;
 }
 
-.info-extra section{
-    display: flex;
-    align-items: center;
-}
-.recursos{
-    padding-top: 60px;
-}
-.info-extra section li{
-    list-style: none;
-}
+
