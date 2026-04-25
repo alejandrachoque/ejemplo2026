@@ -8,3 +8,81 @@ body{
     font-family: 'Times New Roman', Times, serif;
     color: white;
 }
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px;
+    background-color: black;
+
+}
+nav a{
+    text-decoration: none;
+    color: white;
+}
+nav ul {
+  list-style: none;   /* quita los puntitos */
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  gap: 20px;
+}
+
+nav li {
+  position: relative; /* IMPORTANTE para el dropdown */
+}
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+
+  background-color: #0a0c83;
+  padding: 10px;
+  border-radius: 5px;
+
+  flex-direction: column;
+}
+.dropdown:hover .submenu {
+  display: flex;
+}
+.submenu li {
+  padding: 5px 10px;
+}
+
+.submenu a {
+  color: white;
+}
+
+.submenu a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+img {
+   width: 100%;
+  height: auto;
+  padding: 12px;
+  margin: 0
+    
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+.container .card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: indigo;
+
+    gap: 10px;
+}
+.container .card:hover{
+    transform: scale(1.03);
+}
+footer{
+    text-align: center;
+    padding: 30px;
+}
