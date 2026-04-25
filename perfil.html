@@ -1,35 +1,54 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style1.css"> 
     <title>Perfil</title>
-    <link rel="stylesheet" href="css/style1.css">
-  </head>
-  <body>
+</head>
+<body>
     <header>
-      <h1>NOMBRE DE MI SITIO</h1>
-      <nav>
-        <a href="index.html">Inicio</a> |
-        <a href="proyectos.html">Proyectos</a> |
-        <a href="detalle.html">Detalle</a> |
+        <h1 id="main-title">Perfil del Usuario</h1>
+
+    <nav class="menu">
+        <a href="index.html">Inicio</a>
+        <a href="proyectos.html">Proyectos</a>
+        <a href="detalle.html">Detalles</a>
         <a href="perfil.html">Perfil</a>
-      </nav>
+    </nav>
     </header>
-    <main>
-      <section>
-        <h2>Perfil</h2>
-        <img src="img/descarga.jfif" alt="Foto de Perfil" />
-        <!--<label for="nombre">Nombre</label>
-         <input id="nombre" type="text">-->
-        <p><strong>Nombre:</strong> Debora Chavez</p>
-        <p><strong>Rol:</strong> Alumno</p>
-        <p><strong>LU:</strong> 3841</p>
-        <p><strong>Carrera:</strong> Analiasta Programador Univercitario</p>
-      </section>
+
+    <main class="contenedor">
+        <!--columna izquierda-->
+        <section class="izquierda">
+            <h2>Informacion Personal</h2>
+            <p><strong>Nombre:</strong> Daniela Varela</p>
+            <p><strong>Rol:</strong> Alumno</p>
+            <p><strong>Edad:</strong> 22</p>
+            <p><strong>Carrera:</strong> Analiasta Programador Univercitario</p>
+            <p><strong>Correo:</strong> danivarela234@gmail.com</p>
+        </section>
+        
+        <!--columna central-->
+        <section class="centro">
+        <h2> Acerca de mi</h2>
+        <p>Soy estudiante de la carrera Analista Programador Universitario. 
+          Me interesa el desarrollo web y la programación. Actualmente 
+          estoy aprendiendo HTML y CSS para desarrollar proyectos web.
+        </p>
+
+        <button>CONTACTAME</button>
+        </section>
+        <!--columna derecha-->
+        <section class="derecha">
+        <img src="IMG/descarga.jfif" alt="Foto de Perfil">
+        <h2>Hola soy daniela</h2>
+        </section>
     </main>
+    
     <footer>
-      <p>Programación Visual 2026</p>
+     <p>Programación Visual 2026</p>
     </footer>
-  </body>
+
+</body>
 </html>

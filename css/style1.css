@@ -129,7 +129,7 @@ nav a:hover {
   --sombra: 0px 0px 20px rgba(0, 0, 0, 0.15);
 }
 
-/* ================= BASE ================= */
+/* ================= BASE ================= 
 * {
   margin: 0;
   padding: 0;
@@ -148,9 +148,10 @@ body {
 main {
   padding: 2rem;
   display: grid;
-  gap: 2rem; /* antes 1.5 */
-}
-/* ================= HEADER COMPARTIDO ================= */
+  gap: 2rem; }
+  /* antes 1.5 */
+
+/* ================= HEADER COMPARTIDO ================= 
 header {
   background-color: rgb(10, 12, 131);
   color: var(--blanco);
@@ -184,7 +185,7 @@ nav a:hover {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
-/* ================= FOOTER ================= */
+/* ================= FOOTER ================= 
 footer {
   background-color: rgb(10, 12, 131);
   color: var(--blanco);
@@ -192,7 +193,7 @@ footer {
   padding: 15px;
 }
 
-/* ================= Detalle.html ================= */
+/* ================= Detalle.html ================= 
 .detalle-proyecto {
   background-color: var(--blanco);
   padding: 20px;
@@ -256,4 +257,226 @@ footer {
   text-decoration: underline;
 }
 
+*/
+/*CSS DE DEBORA*/
+:root {
+    --fuente-grupo: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    --blanco: #ffffff;
+    --azul: #1987d4;
+    --celeste-fondo: #f4f8f6;
+    --texto-oscuro: #0e0f0f;
+}
 
+body { 
+    background-color: var(--celeste-fondo); 
+    margin: 0;
+    font-family: var(--fuente-grupo);
+    color: var(--texto-oscuro);
+}
+
+
+main {
+  padding: 2rem;
+  display: grid;
+  gap: 2rem; }
+#main-title {
+    color: var(--blanco);               
+    text-align: center;       
+    font-size: 2.2rem;        
+    padding: 30px 10px;
+    text-transform: uppercase; 
+    background-color: rgb(10, 12, 131);
+    border-bottom: 5px solid #27d4ff; /* El toque de color que usa NEXOS */
+} 
+
+#filter-p{
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+    color: var(--blanco); 
+    background-color: rgb(10, 12, 131);
+}
+#title-h2{
+    color: var(--blanco); 
+    background-color: rgb(10, 12, 131);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor-proyectos{
+    display: flex;
+    align-items: stretch;
+    gap: 5px;
+}
+.proyecto{
+    background-color: rgb(124, 155, 247);
+    text-align: center;
+    width:300px;
+    margin: 2px;
+    padding: 10px 10px;
+    box-shadow: 0px 0px 30px #0006;
+    border-radius: 8px;
+}
+.proyect-img{
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+}
+.card_title{
+    margin: 0;
+    font-size: 20px;
+}
+.card_content{
+    font-size: 16px;
+    text-align: center;
+    padding: 10px;
+    padding-bottom: 0;
+    margin: 0;
+}
+/* MENÚ */
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    background: linear-gradient(to right, #6ec1e4, #4fa3d1);
+    padding: 10px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #0b3c5d;
+    font-weight: bold;
+}
+
+.menu a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+}
+/*perfil*/
+.contenedor {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 20px;
+    padding: 40px;
+}
+/*columna izquierda */
+.izquierda{
+    background: rgb(171, 205, 216);
+    padding: 20px;
+    border-radius: 10px;
+}
+/*columna central*/
+.centro {
+    text-align: center;
+}
+
+.centro button {
+     padding: 10px 20px;
+    border: 2px solid #5aa0f0;
+    background: transparent;
+    color: #5aa0f0;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.centro button:hover {
+    background: #5aa0f0;
+    color: rgb(151, 224, 229);
+}
+
+.derecha {
+    background: rgb(171, 205, 216);
+    color: rgb(2, 8, 12);
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    }
+.derecha img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+footer{
+    background-color: rgb(10, 12, 131);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    border-top: 5px solid #27d4ff;
+    font-size: 16px;
+}
+/*detale*/
+/* ================= Detalle.html ================= */
+.detalle-proyecto {
+ 
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+
+
+.info-extra {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.recursos{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--blanco);
+  background: rgb(171, 205, 216);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+}
+.equipo {
+  background-color: var(--blanco);
+  background: rgb(171, 205, 216);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+}
+
+.recursos ul,
+.equipo ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.recursos li,
+.equipo li {
+  display: flex;
+  gap: 8px;
+}
+
+.recursos a,
+.equipo a {
+  text-decoration: none;
+  color: var(--azul);
+}
+
+
+
+.recursos:hover,
+.equipo:hover,
+.detalle-proyecto:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2);
+}
