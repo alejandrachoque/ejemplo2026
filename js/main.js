@@ -71,4 +71,5 @@ let sonPares=numeros.every((n)=>n%2==0)//devuel true o falso si los elemento scu
 
 const frutas=["Manzana","pera","Mango"];
 console.log(frutas.includes("Manzana"));//devuelve true o false si la mazana no esta o esta
-
+ import {saludar} from './saludo.js';
+ saludar('Alejandra');
