@@ -1,0 +1,45 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Contenedor principal */
+.container {
+    width: 300px;
+    padding: 20px;
+    margin: 50px auto; /* lo centra horizontalmente */
+    
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    text-align: center;
+}
+
+/* Texto */
+.container p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Botón */
+.container button {
+    padding: 10px 20px;
+    font-size: 14px;
+
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover del botón */
+.container button:hover {
+    background-color: #45a049;
+}
